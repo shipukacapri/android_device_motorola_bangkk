@@ -95,7 +95,7 @@ $(foreach DEVICE_SKU, $(NFC_DEVICE_SKUS), \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.bangkk
+    sensors.moto_ext
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
