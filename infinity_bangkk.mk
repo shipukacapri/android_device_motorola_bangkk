@@ -11,10 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bangkk device
 $(call inherit-product, device/motorola/bangkk/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common InfinityX stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_bangkk
+# Infinity Flags
+INFINITY_MAINTAINER := Shipu
+TARGET_HAS_UDFPS := true
+WITH_GAPPS := true
+
+PRODUCT_NAME := infinity_bangkk
 PRODUCT_DEVICE := bangkk
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
