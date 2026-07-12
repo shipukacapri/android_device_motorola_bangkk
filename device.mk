@@ -30,6 +30,9 @@ PRODUCT_PACKAGES += \
     SystemUIResDevice \
     WifiResDevice
 
+# Overlay Derp Maintainer
+PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
