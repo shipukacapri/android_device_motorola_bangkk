@@ -7,6 +7,12 @@
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Moto Camera 4
+TARGET_MOTCAMERA4 := bangkk
+TARGET_USES_MOTCAMERA4 := true
+
+$(call inherit-product, vendor/motorola/MotCamera4-sm6375/motcamera4.mk)
+
 # Overlay Voltage Maintainer
 PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-voltage
 
