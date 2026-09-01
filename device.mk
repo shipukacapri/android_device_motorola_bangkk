@@ -13,6 +13,9 @@ TARGET_USES_MOTCAMERA4 := true
 
 $(call inherit-product, vendor/motorola/MotCamera4-sm6375/motcamera4.mk)
 
+# Overlay Voltage Maintainer
+PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-voltage
+
 # Screen
 TARGET_SCREEN_DENSITY := 400
 

@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_bangkk.mk
+    $(LOCAL_DIR)/voltage_bangkk.mk
